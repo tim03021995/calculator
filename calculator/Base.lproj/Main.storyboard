@@ -279,6 +279,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="number0Button" destination="nky-FA-W3O" id="a86-Ck-UZu"/>
                         <outlet property="textNum" destination="OUD-Tv-nlc" id="Nir-zT-1tH"/>
                     </connections>
                 </viewController>

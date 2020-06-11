@@ -7,14 +7,16 @@
 //
 import UIKit
 let fullScreenSize = UIScreen.main.bounds.size
-//private var infix = Infix()
+var infix = Infix()
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        textNum.text = "0"
-        
-        
+        number0Button.revicer = self
     }
+    
+    @IBOutlet weak var number0Button: Button!
+    
     // MARK: - IBAction
     
     @IBOutlet weak var textNum: UILabel!
@@ -37,9 +39,11 @@ class ViewController: UIViewController {
         }
         
     }
-    // MARK: - Meth
-    //    func imageSizeSet(_ image: Button){
-    //
-    //    }
 }
 
+extension ViewController: ButtonTitleReciver {
+    
+    func reviceButtonTitle(_ title: String) {
+        print(title)
+    }
+}
